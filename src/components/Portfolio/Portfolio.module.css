@@ -1,0 +1,59 @@
+.PortfolioWrapper{
+    margin-top: 80px;
+}
+
+.portfolioCards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px
+    
+}
+.PortfolioWrapper h1{
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.portfolioCards .card{
+    width: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolioCards .card .tags{
+    position: absolute;
+    bottom: -40%;
+    left: 5%;
+    transition: .6s;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: grabbing;
+}
+
+.portfolioCards .card:hover .tags{
+    bottom: 5%;
+   
+    
+}
+
+.portfolioCards .card:hover .tags span{
+    border-radius: 30px;
+    background-color: var(--bg-black);
+    padding: 5px 12px;
+    color: var(--button-color);
+}
+
+.portfolioCards .card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .portfolioCards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'syne';
+}
+
+:root{
+    --bg-color: #e6ebf4;
+    --border-color: rgba(0,0,0,0.05);
+    --text-color: #1e1e1e;
+    --background-button: linear-gradient(135deg, #aa70e0, #7059e2);
+    --gradient-text: -webkit-linear-gradient(15deg ,#8756cc, #5d4ec4);
+    --button-color: #fff;
+    --profile-bg-color:#ebf0f7;
+    --bg-black:#000;
+}
+
+[data-theme = 'Dark']{
+    --bg-color: #111111;
+    --border-color: rgba(255,255,255,0.05);
+    --text-color: #e6ebf4;
+    --background-button: linear-gradient(135deg, #e1bac5, #cec4ef);
+    --gradient-text: -webkit-linear-gradient(15deg ,#e1bac5, #cec4ef);
+    --button-color: #111111;
+    --profile-bg-color:#111111;
+    --bg-black:#fff;
+}
+
+
+body{
+    background-color: var(--bg-color);
+}
+
+button{
+    height: 45px;
+    width: 160px;
+    border: none;
+    font-size: 16px;
+    color: var(--button-color);
+    background: var(--background-button);
+    border-radius: 30px;
+    transition: .6s;
+    
+}
+
+button:hover{
+    transform: scale(1.05);
+    cursor: grabbing;
+}
+
+.Main_Wrapper{
+    margin-left: 30%;
+    width: 70%;
+    padding: 50px;
+}
+/* This is header */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.sectionheading{
+    font-size: 16px;
+    display: flex;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 0.5px solid var(--border-color);
+    width: fit-content;
+    border-radius: 30px;
+    color: var(--text-color);
+}
+
+.section_Title{
+    font-size: 80px;
+    line-height: 85px;
+    margin: 20px 0;
+    font-weight: 700;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* @media screen and (max-width: 1400px) {
+    .Main_Wrapper{
+        margin-left: 0%;
+        width: 100%;
+        padding: 50px;
+    }
+  } */
+
+  @media screen and (max-width: 1300px) {
+    .section_Title{
+       font-size: 65px;
+       line-height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .Main_Wrapper{
+        margin-left: 0%;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .section_Title{
+        font-size: 65px;
+       line-height: 70px;
+    }
+  }
+
+  @media screen and (max-width: 545px) {
+    .section_Title{
+        font-size: 30px;
+       line-height: 40px;
+    }
+  }
