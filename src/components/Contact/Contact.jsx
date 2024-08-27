@@ -48,7 +48,7 @@ const Contact = () => {
             <input
               type="text"
               name="subject"
-              placeholder='Regards subjects*'
+              placeholder='Regards messages*'
               value={form.subject}
               onChange={handleChange}
             />
