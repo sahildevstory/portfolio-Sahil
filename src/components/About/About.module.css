@@ -1,13 +1,14 @@
-.AboutWrapper{
+.AboutWrapper {
     padding: 80px 0;
     gap: 22px;
 }
 
-.experienceWrapper{
+.experienceWrapper {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
 .experienceWrapper .experienceCard {
     padding: 20px 30px;
     border-radius: 18px;
@@ -16,7 +17,8 @@
     align-items: center;
     justify-content: center;
 }
-.experienceWrapper .experienceCard h2{
+
+.experienceWrapper .experienceCard h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -24,7 +26,7 @@
     color: var(--text-color);
 }
 
-.experienceWrapper .experienceCard h2 span{
+.experienceWrapper .experienceCard h2 span {
     font-size: 60px;
     line-height: 65px;
     font-weight: 700;
@@ -33,23 +35,23 @@
     -webkit-text-fill-color: transparent;
 }
 
-.AboutWrapper p{
+.AboutWrapper p {
     font-size: 20px;
     letter-spacing: 0.5px;
     color: var(--text-color);
 }
 
-.AboutWrapper  button{
+.AboutWrapper button {
     margin: 20px 0;
 }
 
-.aboutCards{
+.aboutCards {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.aboutCards .aboutCard{
+.aboutCards .aboutCard {
     border: 0.5px solid var(--border-color);
     width: 100%;
     display: flex;
@@ -57,23 +59,24 @@
     gap: 30px;
 }
 
-.aboutCards .aboutCard .content{
+.aboutCards .aboutCard .content {
     padding: 0 30px;
     padding-top: 40px;
 }
 
-.aboutCards .aboutCard .content h2{
+.aboutCards .aboutCard .content h2 {
     color: var(--text-color);
     font-size: 34px;
     margin-bottom: 20px;
 }
 
-.aboutCards .aboutCard .content p{
+.aboutCards .aboutCard .content p {
     display: flex;
+    flex-wrap: wrap; /* Ensure items can wrap onto new lines */
     gap: 20px;
 }
 
-.aboutCards .aboutCard .content p span{
+.aboutCards .aboutCard .content p span {
     padding: 8px 18px;
     border-radius: 30px;
     background-color: var(--bg-black);
@@ -81,22 +84,46 @@
     font-size: 16px;
 }
 
-.aboutCards .aboutCard img{
+.aboutCards .aboutCard img {
     width: 100%;
 }
 
-
-@media screen and (max-width:768px) {
-    .experienceWrapper{
-        grid-template-columns: repeat(2,1fr);
-    } 
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .experienceWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen and (max-width:500px) {
-    .aboutCards{
-        grid-template-columns: repeat(1,1fr);
-    } 
-    .experienceWrapper{
-        grid-template-columns: repeat(1,1fr);
-    } 
+@media screen and (max-width: 768px) {
+    .experienceWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aboutCards {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+    
+    .experienceWrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .AboutWrapper p {
+        font-size: 18px;
+    }
+    
+    .aboutCards .aboutCard .content h2 {
+        font-size: 30px;
+    }
+    
+    .aboutCards .aboutCard .content p span {
+        font-size: 14px;
+    }
+    
+    .experienceWrapper .experienceCard h2 span {
+        font-size: 50px;
+        line-height: 55px;
+    }
 }

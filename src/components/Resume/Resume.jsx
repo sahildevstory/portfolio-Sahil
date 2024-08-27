@@ -8,7 +8,7 @@ import { Autoplay } from 'swiper/modules'
 
 const Resume = () => {
     return (
-        <div className={`${resumecss.ResumeWrapper} section`}>
+        <div id='resume' className={`${resumecss.ResumeWrapper} section`}>
             <h3 className='sectionheading'>
                 <i className='ri-shining-fill'>Education</i>
             </h3>

@@ -4,7 +4,7 @@ import HeroImg from './../../assets/log.jpg'
 
 const Profile = () => {
     return (
-        <div className={profileCSS.ProfileWrapper}>
+        <div id='home' className={profileCSS.ProfileWrapper}>
             <h2>Sahil Khan</h2>
             <div className={profileCSS.headerImg}>
                 <img src={HeroImg} alt="Image" />

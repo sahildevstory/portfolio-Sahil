@@ -1,10 +1,12 @@
-.HeaderWrapper{
+.HeaderWrapper {
     min-height: 60vh;
-    justify-content: end;
+    display: flex; /* Ensure proper layout with flexbox */
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: flex-end; /* Align content to the end */
     gap: 50px;
 }
 
-.HeaderWrapper h1{
+.HeaderWrapper h1 {
     font-size: 80px;
     line-height: 85px;
     font-weight: 700;
@@ -13,14 +15,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .HeaderWrapper .header_btns {
     display: flex;
     gap: 20px;
+    
 }
 
-
-.HeaderWrapper .header_btns button{
+.HeaderWrapper .header_btns button {
     background: transparent;
     border: 0.5px solid var(--border-color);
     color: var(--text-color);
@@ -28,36 +29,68 @@
     align-items: center;
     justify-content: center;
     width: 150px;
+    height: 40px; /* Ensure buttons have a consistent height */
     gap: 8px;
+    font-size: 16px; /* Set a base font size */
+    padding: 10px; /* Add padding for better touch area */
+    border-radius: 30px;
+    /* Rounded corners for buttons */
+    transition: .6s;
+    /* Smooth transition for hover effects */
 }
 
-.HeaderWrapper .header_btns button:nth-of-type(2){
+.HeaderWrapper .header_btns button:nth-of-type(2) {
     width: 180px;
 }
 
-@media screen and (max-width:1300px) {
-    .HeaderWrapper h1{
-        font-size:65px;
+.HeaderWrapper .header_btns button:hover {
+    
+    filter: blur(.5px);
+    transform: scale(1.02);
+    /* Adjust text color on hover */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px) {
+    .HeaderWrapper h1 {
+        font-size: 65px;
         line-height: 70px;
     }
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width: 1100px) {
     .HeaderWrapper {
-        justify-content: start;
+        justify-content: center; /* Center content for medium screens */
+        text-align: center; /* Center text for medium screens */
+    }
+
+    .HeaderWrapper .header_btns {
+        justify-content: center; /* Center buttons horizontally */
     }
 }
 
-@media screen and (max-width:768px) {
-    .HeaderWrapper h1{
-        font-size:45px;
+@media screen and (max-width: 768px) {
+    .HeaderWrapper h1 {
+        font-size: 45px;
         line-height: 55px;
     }
+
+    .HeaderWrapper .header_btns button {
+        width: 130px; /* Adjust button width for smaller screens */
+    }
 }
 
-@media screen and (max-width:545px) {
-    .HeaderWrapper h1{
-        font-size:30px;
+@media screen and (max-width: 545px) {
+    .HeaderWrapper h1 {
+        font-size: 30px;
         line-height: 40px;
+    }
+
+    .HeaderWrapper .header_btns {
+        flex-direction: column; /* Stack buttons vertically on very small screens */
+    }
+
+    .HeaderWrapper .header_btns button {
+        width: 100%; /* Full-width buttons for very small screens */
     }
 }

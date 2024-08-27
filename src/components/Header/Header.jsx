@@ -15,7 +15,7 @@ const Header = () => {
                 <i className='ri-layout-grid-line'></i>
             </button>
 
-            <button onClick={() => window.open('https://drive.google.com/file/d/1U4GgdJRHyev5s5EcsMZFEfNpL3yZkGLU/view?usp=drive_link', '_blank')}>
+            <button onClick={() => window.open('https://drive.google.com/file/d/1EqoJgbhPW8rtqhIqFZTOHuaD4YCf5zDY/view?usp=sharing', '_blank')}>
                 <span>Download Resume</span>
                 <i className='ri-download-line'></i>
             </button>

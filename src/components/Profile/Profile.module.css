@@ -1,7 +1,7 @@
 .ProfileWrapper {
   min-height: 80vh;
   width: 360px;
-  padding: 50px 30px;
+  padding: 10px 30px;
   position: fixed;
   top: 10%;
   left: 5%;
@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--background-color); /* Added background color for better visibility */
 }
 
 .ProfileWrapper h2 {
@@ -20,7 +21,6 @@
 .ProfileWrapper p {
   font-size: 15px;
   color: var(--text-color);
-  
 }
 
 .ProfileWrapper h3 {
@@ -38,12 +38,11 @@
 
 .socialIcons {
   display: flex;
-  gap: 4px;  
+  gap: 4px;
 }
 
-.socialIcons a{
+.socialIcons a {
   text-decoration: none;
-  
 }
 
 .ProfileWrapper .social i {
@@ -75,7 +74,7 @@
 .ProfileWrapper .headerImg img {
   height: 100%;
   width: 100%;
-  border-radius: 18px;
+  border-radius: 20%;
 }
 
 .ProfileWrapper button {
@@ -83,15 +82,54 @@
   font-size: 20px;
 }
 
-
+/* Media Queries */
 @media screen and (max-width: 1400px) {
   .ProfileWrapper {
     position: static;
-    margin: 50px 12%;
-    left: 1%;
+    margin: 50px 20%;
+    left: auto; /* Ensure it's centered */
+    right: auto; /* Ensure it's centered */
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .ProfileWrapper {
+    width: 300px; /* Adjust width for medium screens */
+    padding: 10px 20px;
+    margin: 50px 10%;
+  }
+}
 
+@media screen and (max-width: 992px) {
+  .ProfileWrapper {
+    width: 280px; /* Adjust width for smaller screens */
+    padding: 10px 15px;
+    margin: 30px 5%;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .ProfileWrapper {
+    width: 90%; /* Full width for very small screens */
+    padding: 10px;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+  }
 
+  .ProfileWrapper h2 {
+    font-size: 28px;
+  }
+
+  .ProfileWrapper p {
+    font-size: 14px;
+  }
+
+  .ProfileWrapper h3 {
+    font-size: 22px;
+  }
+
+  .ProfileWrapper button {
+    font-size: 18px;
+  }
+}

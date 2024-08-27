@@ -7,7 +7,7 @@ import Portfolio4 from './../../assets/4.png'
 
 const Portfolio = () => {
   return (
-    <div className={`${portfolioCSS.PortfolioWrapper} section`}>
+    <div id='portfolio' className={`${portfolioCSS.PortfolioWrapper} section`}>
          <h3 className='sectionheading'>
             <i className='ri-shining-fill'>Portfolio</i>
         </h3>
