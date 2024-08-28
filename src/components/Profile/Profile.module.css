@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--background-color); /* Added background color for better visibility */
+  background-color: var(--background-color);
 }
 
 .ProfileWrapper h2 {
@@ -87,14 +87,14 @@
   .ProfileWrapper {
     position: static;
     margin: 50px 20%;
-    left: auto; /* Ensure it's centered */
-    right: auto; /* Ensure it's centered */
+    left: auto;
+    right: auto;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .ProfileWrapper {
-    width: 300px; /* Adjust width for medium screens */
+    width: 300px;
     padding: 10px 20px;
     margin: 50px 10%;
   }
@@ -102,7 +102,7 @@
 
 @media screen and (max-width: 992px) {
   .ProfileWrapper {
-    width: 280px; /* Adjust width for smaller screens */
+    width: 280px;
     padding: 10px 15px;
     margin: 30px 5%;
   }
@@ -110,7 +110,7 @@
 
 @media screen and (max-width: 768px) {
   .ProfileWrapper {
-    width: 90%; /* Full width for very small screens */
+    width: 90%;
     padding: 10px;
     top: 5%;
     left: 5%;
@@ -132,10 +132,43 @@
   .ProfileWrapper button {
     font-size: 18px;
   }
-  .ProfileWrapper .headerImg img{
+  
+  .ProfileWrapper .headerImg img {
     border-radius: 10%;
     height: 70%;
     width: 50%;
   }
+}
 
+/* Email Specific Styles */
+@media only screen and (max-width: 600px) {
+  .ProfileWrapper {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .ProfileWrapper h2 {
+    font-size: 24px;
+  }
+
+  .ProfileWrapper p {
+    font-size: 14px;
+  }
+
+  .ProfileWrapper h3 {
+    font-size: 20px;
+  }
+
+  .ProfileWrapper .headerImg img {
+    border-radius: 10%;
+    height: auto;
+    width: 100%;
+  }
+
+  .ProfileWrapper button {
+    font-size: 16px;
+  }
 }
