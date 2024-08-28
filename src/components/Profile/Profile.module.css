@@ -74,7 +74,7 @@
 .ProfileWrapper .headerImg img {
   height: 100%;
   width: 100%;
-  border-radius: 20%;
+  border-radius: 25px;
 }
 
 .ProfileWrapper button {
@@ -132,4 +132,10 @@
   .ProfileWrapper button {
     font-size: 18px;
   }
+  .ProfileWrapper .headerImg img{
+    border-radius: 10%;
+    height: 70%;
+    width: 50%;
+  }
+
 }
