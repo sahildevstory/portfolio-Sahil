@@ -4,14 +4,17 @@ import HeroImg from './../../assets/log.jpg'
 
 const Profile = () => {
     return (
+        
         <div id='home' className={profileCSS.ProfileWrapper}>
+                       
+
             <h2>Sahil Khan</h2>
             <div className={profileCSS.headerImg}>
                 <img src={HeroImg} alt="Image" />
             </div>
             <div className={profileCSS.specialization}>
                 <p>Specialization</p>
-                <h3>FullStack Developer and UI / UX Design</h3>
+                <h3>FullStack Developer <br />and <br /> UI / UX Design</h3>
             </div>
             <div className={profileCSS.social}>
                 <p>Follow me on Social media Platform</p>

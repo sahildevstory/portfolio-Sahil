@@ -89,32 +89,54 @@
     margin: 50px 20%;
     left: auto;
     right: auto;
+    margin-left: 40%;
+
+
   }
+
 }
 
 @media screen and (max-width: 1200px) {
   .ProfileWrapper {
     width: 300px;
     padding: 10px 20px;
-    margin: 50px 10%;
+    margin-left: 40%;
+  }
+  .ProfileWrapper .social i {
+    height: 50px;
+    width: 40px;
+  }  
+  .ProfileWrapper .headerImg img {
+    border-radius: 10%;
+    height: 80%;
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 992px) {
   .ProfileWrapper {
-    width: 280px;
+    width: 300px;
     padding: 10px 15px;
-    margin: 30px 5%;
+    margin-left: 30%;
+
   }
+  
+.ProfileWrapper .social i {
+  height: 50px;
+  width: 40px;
+  
+}
 }
 
 @media screen and (max-width: 768px) {
   .ProfileWrapper {
-    width: 90%;
+    width: 50%;
     padding: 10px;
     top: 5%;
     left: 5%;
     right: 5%;
+    margin-left: 30%;
+
   }
 
   .ProfileWrapper h2 {
@@ -132,22 +154,27 @@
   .ProfileWrapper button {
     font-size: 18px;
   }
-  
+  .ProfileWrapper .headerImg{
+    height: 80%;
+    width: 80%;
+  }
   .ProfileWrapper .headerImg img {
     border-radius: 10%;
-    height: 70%;
+    height: 50%;
     width: 50%;
   }
+  
 }
 
 /* Email Specific Styles */
 @media only screen and (max-width: 600px) {
   .ProfileWrapper {
-    width: 100%;
+    width: 60%;
     padding: 20px;
     position: relative;
     top: 0;
     left: 0;
+    margin-left: 20%;
   }
 
   .ProfileWrapper h2 {
@@ -167,7 +194,11 @@
     height: 100%;
     width: 100%;
   }
-
+  .ProfileWrapper .social i {
+    height: 50px;
+    width: 30px;
+    
+  }
   .ProfileWrapper button {
     font-size: 16px;
   }

@@ -4,13 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sahil Khan</title>
-    <link rel="icon" type="image/png/" href="/src/assets/logi.avif ">
+    <link rel="icon" type="image/png/" href="/src/assets/favicon.ico ">
 
     <!-- emix Icon CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
   </head>
+  <style type="text/css">
+ 
+ /* Base loader styles */
+ .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Typeface';
+    font-size: 5vw;
+    gap: 2vw;
+}
+
+.loader h2 {
+    color: #7059e2;
+    line-height: 1;
+    margin: 0;
+}
+
+
+/* Hover effect */
+.loader:hover h2 {
+    color: #ff5733; /* Change color on hover */
+}
+
+
+</style>
   <body>
     <div id="root"></div>
+    <div class="loader">
+      <h2>Hi! This is Sahil Khan <br> Lets dive into this</h2>
+    
+      
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+ 
     <script type="module" src="/src/main.jsx"></script>
+    <script src="/script.js"></script>
+
   </body>
 </html>

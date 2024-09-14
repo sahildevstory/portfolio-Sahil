@@ -21,6 +21,7 @@ const Main = () => {
     //calling Light mode by default
     Lightmode();
     return (
+        
         <div className={mainCSS.navbar}>
             <ul>
                 <li><a href="#home"><span>Home</span> <i className='ri-home-line'></i></a></li>
