@@ -13,8 +13,8 @@ const Profile = () => {
                 <img src={HeroImg} alt="Image" />
             </div>
             <div className={profileCSS.specialization}>
-                <p>Specialization</p>
-                <h3>FullStack Developer <br />and <br /> UI / UX Design</h3>
+                <p>Specialization In</p>
+                <h3>FullStack Developer <br />and <br /> </h3>
             </div>
             <div className={profileCSS.social}>
                 <p>Follow me on Social media Platform</p>

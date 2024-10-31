@@ -38,7 +38,7 @@
 
 .socialIcons {
   display: flex;
-  gap: 4px;
+  gap: 2px;
 }
 
 .socialIcons a {
@@ -138,7 +138,9 @@
     margin-left: 30%;
 
   }
-
+  .socialIcons{
+    gap: 7px;
+  }
   .ProfileWrapper h2 {
     font-size: 28px;
   }
@@ -155,13 +157,13 @@
     font-size: 18px;
   }
   .ProfileWrapper .headerImg{
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
   }
   .ProfileWrapper .headerImg img {
     border-radius: 10%;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
   }
   
 }
@@ -195,11 +197,14 @@
     width: 100%;
   }
   .ProfileWrapper .social i {
-    height: 50px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     
   }
   .ProfileWrapper button {
     font-size: 16px;
+  }
+  .socialIcons{
+    gap: 5px;
   }
 }

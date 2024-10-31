@@ -1,5 +1,5 @@
 .ContactWrapper{
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 form{
@@ -53,8 +53,8 @@ textarea{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin-top: 20px;
+
 }
 
 .contactDetails .card h3{
