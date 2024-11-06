@@ -14,7 +14,7 @@ const Profile = () => {
             </div>
             <div className={profileCSS.specialization}>
                 <p>Specialization In</p>
-                <h3>FullStack Developer <br />and <br /> </h3>
+                <h3>FullStack Developer <br />and <br />App Development </h3>
             </div>
             <div className={profileCSS.social}>
                 <p>Follow me on Social media Platform</p>
