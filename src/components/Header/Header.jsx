@@ -11,12 +11,12 @@ const Header = () => {
         <h1 className='section_Title'>I'm Sahil Khan <br /> FullStack Developer and <br /> UI / UX Designer</h1>
 
         <div className={headerCSS.header_btns}>
-            <button  onClick={() => window.open('https://github.com/SahilKhan44', '_blank')}>
+            <button  onClick={() => window.open('https://github.com/sahildevstory', '_blank')}>
                 <span>My Works</span>
                 <i className='ri-layout-grid-line'></i>
             </button>
 
-            <button onClick={() => window.open('https://drive.google.com/file/d/1EqoJgbhPW8rtqhIqFZTOHuaD4YCf5zDY/view?usp=sharing', '_blank')}>
+            <button onClick={() => window.open('https://drive.google.com/file/d/1_BjgS3zbHrVmPfbNdA7vAd9Xjvqf093y/view?usp=sharing', '_blank')}>
                 <span>Download Resume</span>
                 <i className='ri-download-line'></i>
             </button>

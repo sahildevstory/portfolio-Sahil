@@ -1,12 +1,15 @@
 import React from 'react'
 import profileCSS from './../Profile/Profile.module.css'
 import HeroImg from './../../assets/log.jpg'
+import { TbBrandLeetcode } from "react-icons/tb";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 const Profile = () => {
     return (
-        
+
         <div id='home' className={profileCSS.ProfileWrapper}>
-                       
+
 
             <h2>Sahil Khan</h2>
             <div className={profileCSS.headerImg}>
@@ -23,7 +26,11 @@ const Profile = () => {
                         <i className='ri-instagram-line'></i>
                     </a>
                     <a href="https://leetcode.com/u/sahilcodestory/" target="_blank" rel="noopener noreferrer">
-                        <i className='ri-code-s-slash-line'></i>
+                        {/* <i className='ri-code-s-slash-line'></i> */}
+                        <i>
+                            <TbBrandLeetcode size={25} />
+                        </i>
+
                     </a>
                     <a href="https://github.com/sahildevstory" target="_blank" rel="noopener noreferrer">
                         <i className='ri-github-line'></i>
@@ -32,14 +39,18 @@ const Profile = () => {
                         <i className='ri-linkedin-line'></i>
                     </a>
                     <a href="https://x.com/sahilgiggles" target="_blank" rel="noopener noreferrer">
-                        <i className='ri-twitter-line'></i>
+                        <i>
+                            <FaXTwitter />
+                        </i>
                     </a>
                     <a href="https://www.geeksforgeeks.org/user/sahil_44/" target="_blank" rel="noopener noreferrer">
-                        <i className='ri-terminal-box-line'></i>
+                        <i>
+                            <SiGeeksforgeeks />
+                        </i>
                     </a>
                 </div>
             </div>
-            <a href="https://github.com/SahilKhan44" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sahildevstory" target="_blank" rel="noopener noreferrer">
                 <button>Let's Works Together *</button>
             </a>
 

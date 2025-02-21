@@ -17,7 +17,7 @@ const Portfolio = () => {
             <div className={portfolioCSS.card}>
                 <img src= {Portfolio1} alt="Portfolio-img" />
                 <div className={portfolioCSS.tags}>
-w                    <span onClick={() => window.open('https://github.com/SahilKhan44/mern-blog-app/', '_blank')}>GitHub</span>
+w                    <span onClick={() => window.open('https://github.com/sahildevstory/mern-blog-app/', '_blank')}>GitHub</span>
                     <span onClick={() => window.open('https://sahils-blog.onrender.com/', '_blank')}>Live Link</span>
                 </div>
             </div>
@@ -25,7 +25,7 @@ w                    <span onClick={() => window.open('https://github.com/SahilK
             <div className={portfolioCSS.card}>
                 <img src= {Portfolio2} alt="Portfolio-img" />
                 <div className={portfolioCSS.tags}>
-                    <span  onClick={() => window.open('https://github.com/SahilKhan44/Resume-Builder', '_blank')}>GitHub</span>
+                    <span  onClick={() => window.open('https://github.com/sahildevstory/Resume-Builder', '_blank')}>GitHub</span>
                     <span onClick={() => window.open('https://resume-builder-lac-seven.vercel.app/', '_blank')}>Live Link</span>
                 </div>
             </div>
@@ -33,7 +33,7 @@ w                    <span onClick={() => window.open('https://github.com/SahilK
             <div className={portfolioCSS.card}>
                 <img src= {Portfolio3} alt="Portfolio-img" />
                 <div className={portfolioCSS.tags}>
-                <span  onClick={() => window.open('https://github.com/SahilKhan44/Giphy-App','_blank')}>GitHub</span>
+                <span  onClick={() => window.open('https://github.com/sahildevstory/Giphy-App','_blank')}>GitHub</span>
                 <span onClick={() => window.open('https://giphy-appapi.netlify.app/signin', '_blank')}>Live Link</span>
                 </div>
             </div>
@@ -41,11 +41,11 @@ w                    <span onClick={() => window.open('https://github.com/SahilK
             <div className={portfolioCSS.card}>
                 <img src= {Portfolio4} alt="Portfolio-img" />
                 <div className={portfolioCSS.tags}>
-                <span  onClick={() => window.open('https://github.com/SahilKhan44/Portfolio','_blank')}>GitHub</span>
+                <span  onClick={() => window.open('https://github.com/sahildevstory/Portfolio','_blank')}>GitHub</span>
                 <span onClick={() => window.open('https://whoissahilkhan.netlify.app/', '_blank')}>Live Link</span>
                 </div>
             </div>
-            <button onClick={() => window.open('https://github.com/SahilKhan44', '_blank')}>Check it Out on Github
+            <button onClick={() => window.open('https://github.com/sahildevstory', '_blank')}>Check it Out on Github
             <i className='ri-external-link-line'></i>
         </button>
         </div>
