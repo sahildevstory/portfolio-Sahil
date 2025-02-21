@@ -22,16 +22,16 @@ const Profile = () => {
                     <a href="https://www.instagram.com/be__sahil" target="_blank" rel="noopener noreferrer">
                         <i className='ri-instagram-line'></i>
                     </a>
-                    <a href="https://leetcode.com/u/Sahil_Khan44/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://leetcode.com/u/sahilcodestory/" target="_blank" rel="noopener noreferrer">
                         <i className='ri-code-s-slash-line'></i>
                     </a>
-                    <a href="https://github.com/SahilKhan44" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/sahildevstory" target="_blank" rel="noopener noreferrer">
                         <i className='ri-github-line'></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/sahil-khan-34b069258/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/sahiltechjourney/" target="_blank" rel="noopener noreferrer">
                         <i className='ri-linkedin-line'></i>
                     </a>
-                    <a href="https://x.com/Be_Sahil_" target="_blank" rel="noopener noreferrer">
+                    <a href="https://x.com/sahilgiggles" target="_blank" rel="noopener noreferrer">
                         <i className='ri-twitter-line'></i>
                     </a>
                     <a href="https://www.geeksforgeeks.org/user/sahil_44/" target="_blank" rel="noopener noreferrer">
